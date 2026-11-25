@@ -1,0 +1,1144 @@
+[
+  {
+    "scenario": "A",
+    "mode": "PROGRESSIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.43,
+    "occupancy": 0.475,
+    "idle_fraction": 0.525,
+    "calls_initiated": 1836,
+    "answered": 360,
+    "connected": 360,
+    "completed": 340,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 8,
+    "cancelled": 0,
+    "connects_per_agent_hour": 14.4,
+    "safety": {
+      "APPROVE": {
+        "ticks": 1800,
+        "proposed": 1836,
+        "approved": 1836
+      }
+    },
+    "events": {
+      "ingested": 3974,
+      "duplicates": 0,
+      "applied": 3974,
+      "stale": 0,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 1836,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 3974,
+        "duplicates": 0,
+        "bridges": 360,
+        "hangups": 0,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "A: answer 20%, talk 120s",
+    "wall_s": 3.3,
+    "chart": "A_progressive.png"
+  },
+  {
+    "scenario": "A",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.676,
+    "occupancy": 0.745,
+    "idle_fraction": 0.255,
+    "calls_initiated": 2715,
+    "answered": 558,
+    "connected": 558,
+    "completed": 518,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 11,
+    "cancelled": 0,
+    "connects_per_agent_hour": 22.32,
+    "safety": {
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 31,
+        "proposed": 153,
+        "approved": 51
+      },
+      "REDUCE": {
+        "ticks": 780,
+        "proposed": 34256,
+        "approved": 2664
+      },
+      "REJECT": {
+        "ticks": 989,
+        "proposed": 38313,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 5923,
+      "duplicates": 0,
+      "applied": 5923,
+      "stale": 0,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 2715,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 5923,
+        "duplicates": 0,
+        "bridges": 558,
+        "hangups": 0,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "A: answer 20%, talk 120s",
+    "wall_s": 4.4,
+    "chart": "A_predictive.png"
+  },
+  {
+    "scenario": "B",
+    "mode": "PROGRESSIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.628,
+    "occupancy": 0.713,
+    "idle_fraction": 0.287,
+    "calls_initiated": 1330,
+    "answered": 673,
+    "connected": 673,
+    "completed": 639,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 4,
+    "cancelled": 0,
+    "connects_per_agent_hour": 26.92,
+    "safety": {
+      "APPROVE": {
+        "ticks": 1800,
+        "proposed": 1330,
+        "approved": 1330
+      }
+    },
+    "events": {
+      "ingested": 3281,
+      "duplicates": 0,
+      "applied": 3281,
+      "stale": 0,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 1330,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 3281,
+        "duplicates": 0,
+        "bridges": 673,
+        "hangups": 0,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "B: answer 50%, talk 90s",
+    "wall_s": 3.1,
+    "chart": "B_progressive.png"
+  },
+  {
+    "scenario": "B",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.732,
+    "occupancy": 0.828,
+    "idle_fraction": 0.172,
+    "calls_initiated": 1512,
+    "answered": 762,
+    "connected": 762,
+    "completed": 723,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 2,
+    "cancelled": 2,
+    "connects_per_agent_hour": 30.48,
+    "safety": {
+      "APPROVE": {
+        "ticks": 12,
+        "proposed": 2,
+        "approved": 2
+      },
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 12,
+        "proposed": 156,
+        "approved": 52
+      },
+      "REDUCE": {
+        "ticks": 919,
+        "proposed": 9699,
+        "approved": 1458
+      },
+      "REJECT": {
+        "ticks": 857,
+        "proposed": 6741,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 3734,
+      "duplicates": 0,
+      "applied": 3732,
+      "stale": 2,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 1512,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 3734,
+        "duplicates": 0,
+        "bridges": 762,
+        "hangups": 2,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "B: answer 50%, talk 90s",
+    "wall_s": 3.3,
+    "chart": "B_predictive.png"
+  },
+  {
+    "scenario": "C",
+    "mode": "PROGRESSIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.826,
+    "occupancy": 0.879,
+    "idle_fraction": 0.121,
+    "calls_initiated": 661,
+    "answered": 443,
+    "connected": 443,
+    "completed": 402,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 0,
+    "cancelled": 0,
+    "connects_per_agent_hour": 17.72,
+    "safety": {
+      "APPROVE": {
+        "ticks": 1800,
+        "proposed": 661,
+        "approved": 661
+      }
+    },
+    "events": {
+      "ingested": 1719,
+      "duplicates": 0,
+      "applied": 1719,
+      "stale": 0,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 661,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 1720,
+        "duplicates": 0,
+        "bridges": 443,
+        "hangups": 0,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "C: answer 70%, talk 180s",
+    "wall_s": 1.9,
+    "chart": "C_progressive.png"
+  },
+  {
+    "scenario": "C",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.85,
+    "occupancy": 0.907,
+    "idle_fraction": 0.093,
+    "calls_initiated": 706,
+    "answered": 473,
+    "connected": 473,
+    "completed": 432,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 4,
+    "cancelled": 0,
+    "connects_per_agent_hour": 18.92,
+    "safety": {
+      "APPROVE": {
+        "ticks": 136,
+        "proposed": 19,
+        "approved": 19
+      },
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 11,
+        "proposed": 156,
+        "approved": 52
+      },
+      "REDUCE": {
+        "ticks": 511,
+        "proposed": 2254,
+        "approved": 635
+      },
+      "REJECT": {
+        "ticks": 1142,
+        "proposed": 3200,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 1833,
+      "duplicates": 0,
+      "applied": 1833,
+      "stale": 0,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 706,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 1833,
+        "duplicates": 0,
+        "bridges": 473,
+        "hangups": 0,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "C: answer 70%, talk 180s",
+    "wall_s": 2.0,
+    "chart": "C_predictive.png"
+  },
+  {
+    "scenario": "D",
+    "mode": "PROGRESSIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.472,
+    "occupancy": 0.538,
+    "idle_fraction": 0.462,
+    "calls_initiated": 1751,
+    "answered": 519,
+    "connected": 519,
+    "completed": 501,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 9,
+    "cancelled": 0,
+    "connects_per_agent_hour": 20.76,
+    "safety": {
+      "APPROVE": {
+        "ticks": 1800,
+        "proposed": 1751,
+        "approved": 1751
+      }
+    },
+    "events": {
+      "ingested": 3964,
+      "duplicates": 0,
+      "applied": 3964,
+      "stale": 0,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 1751,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 3964,
+        "duplicates": 0,
+        "bridges": 519,
+        "hangups": 0,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "D: changing (30%->65%->10%, talk 120->60->180s)",
+    "wall_s": 3.4,
+    "chart": "D_progressive.png"
+  },
+  {
+    "scenario": "D",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.666,
+    "occupancy": 0.747,
+    "idle_fraction": 0.253,
+    "calls_initiated": 2475,
+    "answered": 636,
+    "connected": 636,
+    "completed": 610,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 8,
+    "cancelled": 4,
+    "connects_per_agent_hour": 25.44,
+    "safety": {
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 31,
+        "proposed": 150,
+        "approved": 50
+      },
+      "REDUCE": {
+        "ticks": 962,
+        "proposed": 48322,
+        "approved": 2425
+      },
+      "REJECT": {
+        "ticks": 807,
+        "proposed": 29692,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 5480,
+      "duplicates": 0,
+      "applied": 5476,
+      "stale": 4,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 2475,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 5480,
+        "duplicates": 0,
+        "bridges": 636,
+        "hangups": 4,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "D: changing (30%->65%->10%, talk 120->60->180s)",
+    "wall_s": 4.2,
+    "chart": "D_predictive.png"
+  },
+  {
+    "scenario": "E",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.573,
+    "occupancy": 0.626,
+    "idle_fraction": 0.374,
+    "calls_initiated": 1696,
+    "answered": 426,
+    "connected": 426,
+    "completed": 396,
+    "abandoned": 7,
+    "abandon_rate": 0.0164,
+    "failed": 66,
+    "cancelled": 3,
+    "connects_per_agent_hour": 17.04,
+    "safety": {
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 1146,
+        "proposed": 7855,
+        "approved": 933
+      },
+      "REDUCE": {
+        "ticks": 263,
+        "proposed": 6657,
+        "approved": 763
+      },
+      "REJECT": {
+        "ticks": 391,
+        "proposed": 13028,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 3744,
+      "duplicates": 470,
+      "applied": 3650,
+      "stale": 94,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 16,
+      "unreconcilable": 22,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 808,
+        "timeouts": 18,
+        "ghosts": 6,
+        "rejected": 0,
+        "events": 1817,
+        "duplicates": 0,
+        "bridges": 198,
+        "hangups": 3,
+        "fallback_hangups": 7
+      },
+      "B": {
+        "placed": 842,
+        "timeouts": 47,
+        "ghosts": 21,
+        "rejected": 8,
+        "events": 1841,
+        "duplicates": 565,
+        "bridges": 221,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "E: provider outage (A down, then A+B down)",
+    "wall_s": 3.6,
+    "chart": "E_predictive.png",
+    "breaker_transitions": {
+      "provA": [
+        [
+          627,
+          "OPEN"
+        ],
+        [
+          642,
+          "HALF_OPEN"
+        ],
+        [
+          674,
+          "OPEN"
+        ],
+        [
+          689,
+          "HALF_OPEN"
+        ],
+        [
+          689,
+          "OPEN"
+        ],
+        [
+          704,
+          "HALF_OPEN"
+        ],
+        [
+          704,
+          "OPEN"
+        ],
+        [
+          719,
+          "HALF_OPEN"
+        ],
+        [
+          719,
+          "OPEN"
+        ],
+        [
+          734,
+          "HALF_OPEN"
+        ],
+        [
+          734,
+          "OPEN"
+        ],
+        [
+          749,
+          "HALF_OPEN"
+        ],
+        [
+          749,
+          "OPEN"
+        ],
+        [
+          764,
+          "HALF_OPEN"
+        ]
+      ],
+      "provB": [
+        [
+          673,
+          "OPEN"
+        ],
+        [
+          688,
+          "HALF_OPEN"
+        ],
+        [
+          688,
+          "OPEN"
+        ],
+        [
+          703,
+          "HALF_OPEN"
+        ],
+        [
+          703,
+          "OPEN"
+        ],
+        [
+          718,
+          "HALF_OPEN"
+        ],
+        [
+          718,
+          "OPEN"
+        ],
+        [
+          733,
+          "HALF_OPEN"
+        ],
+        [
+          733,
+          "OPEN"
+        ],
+        [
+          748,
+          "HALF_OPEN"
+        ],
+        [
+          748,
+          "OPEN"
+        ],
+        [
+          763,
+          "HALF_OPEN"
+        ],
+        [
+          763,
+          "CLOSED"
+        ]
+      ]
+    }
+  },
+  {
+    "scenario": "F",
+    "mode": "PREDICTIVE",
+    "agents": 100,
+    "minutes": 30.0,
+    "utilization": 0.717,
+    "occupancy": 0.788,
+    "idle_fraction": 0.212,
+    "calls_initiated": 4110,
+    "answered": 1023,
+    "connected": 1021,
+    "completed": 947,
+    "abandoned": 2,
+    "abandon_rate": 0.002,
+    "failed": 17,
+    "cancelled": 46,
+    "connects_per_agent_hour": 20.42,
+    "safety": {
+      "APPROVE": {
+        "ticks": 23,
+        "proposed": 0,
+        "approved": 0
+      },
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 79,
+        "proposed": 650,
+        "approved": 152
+      },
+      "REDUCE": {
+        "ticks": 808,
+        "proposed": 36057,
+        "approved": 3958
+      },
+      "REJECT": {
+        "ticks": 890,
+        "proposed": 37327,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 9086,
+      "duplicates": 0,
+      "applied": 9038,
+      "stale": 48,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 4110,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 9087,
+        "duplicates": 0,
+        "bridges": 1021,
+        "hangups": 48,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "F: agent drop (100 agents, 40 vanish in 3s)",
+    "wall_s": 7.3,
+    "chart": "F_predictive.png",
+    "reaction_s_to_fallback": 1.0,
+    "shed_total": 46
+  },
+  {
+    "scenario": "G",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.698,
+    "occupancy": 0.766,
+    "idle_fraction": 0.234,
+    "calls_initiated": 2115,
+    "answered": 554,
+    "connected": 552,
+    "completed": 513,
+    "abandoned": 2,
+    "abandon_rate": 0.0036,
+    "failed": 9,
+    "cancelled": 14,
+    "connects_per_agent_hour": 22.08,
+    "safety": {
+      "APPROVE": {
+        "ticks": 20,
+        "proposed": 2,
+        "approved": 2
+      },
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 240,
+        "proposed": 951,
+        "approved": 141
+      },
+      "REDUCE": {
+        "ticks": 601,
+        "proposed": 31924,
+        "approved": 1972
+      },
+      "REJECT": {
+        "ticks": 939,
+        "proposed": 50389,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 4726,
+      "duplicates": 0,
+      "applied": 4710,
+      "stale": 16,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 2115,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 4726,
+        "duplicates": 0,
+        "bridges": 552,
+        "hangups": 16,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "G: answer-rate surge 10% -> 70%",
+    "wall_s": 4.3,
+    "chart": "G_predictive.png",
+    "seconds_until_p_safe_above_0.6": 143.0
+  },
+  {
+    "scenario": "H",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.44,
+    "occupancy": 0.488,
+    "idle_fraction": 0.512,
+    "calls_initiated": 1658,
+    "answered": 376,
+    "connected": 376,
+    "completed": 355,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 83,
+    "cancelled": 0,
+    "connects_per_agent_hour": 15.04,
+    "safety": {
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 1800,
+        "proposed": 10870,
+        "approved": 1658
+      }
+    },
+    "events": {
+      "ingested": 3690,
+      "duplicates": 851,
+      "applied": 3502,
+      "stale": 188,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 38,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "B": {
+        "placed": 1605,
+        "timeouts": 82,
+        "ghosts": 44,
+        "rejected": 15,
+        "events": 3507,
+        "duplicates": 1040,
+        "bridges": 376,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "H: only Provider B (slow, duplicates, reorder)",
+    "wall_s": 3.9,
+    "chart": "H_predictive.png"
+  },
+  {
+    "scenario": "I",
+    "mode": "PREDICTIVE",
+    "agents": 50,
+    "minutes": 30.0,
+    "utilization": 0.718,
+    "occupancy": 0.788,
+    "idle_fraction": 0.212,
+    "calls_initiated": 2289,
+    "answered": 559,
+    "connected": 559,
+    "completed": 524,
+    "abandoned": 0,
+    "abandon_rate": 0.0,
+    "failed": 10,
+    "cancelled": 1,
+    "connects_per_agent_hour": 22.36,
+    "safety": {
+      "FALLBACK_PROGRESSIVE": {
+        "ticks": 31,
+        "proposed": 153,
+        "approved": 50
+      },
+      "REDUCE": {
+        "ticks": 785,
+        "proposed": 22947,
+        "approved": 2239
+      },
+      "REJECT": {
+        "ticks": 984,
+        "proposed": 25650,
+        "approved": 0
+      }
+    },
+    "events": {
+      "ingested": 5054,
+      "duplicates": 0,
+      "applied": 5053,
+      "stale": 1,
+      "unknown": 0,
+      "late_answer_after_cancel": 0,
+      "errors": 0
+    },
+    "recovery": {
+      "setup_rolled_back": 0,
+      "adopted": 0,
+      "lost": 0,
+      "unreconcilable": 0,
+      "stale_reconciled": 0,
+      "agents_repaired": 0,
+      "borrowers_released": 0,
+      "wrapups_forced": 0
+    },
+    "provider_stats": {
+      "A": {
+        "placed": 2289,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 5054,
+        "duplicates": 0,
+        "bridges": 559,
+        "hangups": 1,
+        "fallback_hangups": 0
+      },
+      "B": {
+        "placed": 0,
+        "timeouts": 0,
+        "ghosts": 0,
+        "rejected": 0,
+        "events": 0,
+        "duplicates": 0,
+        "bridges": 0,
+        "hangups": 0,
+        "fallback_hangups": 0
+      }
+    },
+    "invariant_violations": 0,
+    "title": "I: 3 workers, worker w2 crashes",
+    "wall_s": 7.2,
+    "chart": "I_predictive.png"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "contention": [
+    {
+      "processes": 4,
+      "agents": 50,
+      "seconds": 6,
+      "reservations": 16098,
+      "reservations_per_s": 2683,
+      "empty_picks": 0,
+      "overlapping_holds": 0,
+      "wall_s": 6.0
+    },
+    {
+      "processes": 8,
+      "agents": 50,
+      "seconds": 6,
+      "reservations": 25167,
+      "reservations_per_s": 4194,
+      "empty_picks": 0,
+      "overlapping_holds": 0,
+      "wall_s": 6.0
+    },
+    {
+      "processes": 8,
+      "agents": 5,
+      "seconds": 6,
+      "reservations": 14451,
+      "reservations_per_s": 2408,
+      "empty_picks": 384177,
+      "overlapping_holds": 0,
+      "wall_s": 6.0
+    }
+  ],
+  "ingestion": {
+    "calls": 20000,
+    "events_delivered": 77886,
+    "ingest_per_s": 109786,
+    "apply_per_s": 13517,
+    "final_call_states": {
+      "COMPLETED": 20000
+    },
+    "final_agent_states": {
+      "WRAP_UP": 20000
+    },
+    "invariant_violations": 0
+  },
+  "scale": [
+    {
+      "agents": 100,
+      "sim_seconds": 300,
+      "wall_s": 0.7,
+      "calls_initiated": 973,
+      "calls_per_sim_s": 3.2,
+      "ms_p50": {
+        "events": 0.3,
+        "snapshot": 0.7,
+        "pacing+safety": 0.2,
+        "allocation": 1.0,
+        "tick_total": 1.7
+      },
+      "ms_p95": {
+        "events": 1.7,
+        "snapshot": 1.0,
+        "pacing+safety": 0.6,
+        "allocation": 5.1,
+        "tick_total": 5.0
+      },
+      "realtime_factor": 417.61,
+      "utilization": 0.646,
+      "invariant_violations": 0
+    },
+    {
+      "agents": 1000,
+      "sim_seconds": 120,
+      "wall_s": 5.1,
+      "calls_initiated": 5067,
+      "calls_per_sim_s": 42.2,
+      "ms_p50": {
+        "events": 3.2,
+        "snapshot": 3.6,
+        "pacing+safety": 9.5,
+        "allocation": 43.7,
+        "tick_total": 23.0
+      },
+      "ms_p95": {
+        "events": 21.5,
+        "snapshot": 5.6,
+        "pacing+safety": 78.4,
+        "allocation": 80.0,
+        "tick_total": 128.8
+      },
+      "realtime_factor": 23.39,
+      "utilization": 0.5,
+      "invariant_violations": 0
+    },
+    {
+      "agents": 10000,
+      "sim_seconds": 30,
+      "wall_s": 7.5,
+      "calls_initiated": 11018,
+      "calls_per_sim_s": 367.3,
+      "ms_p50": {
+        "events": 24.6,
+        "snapshot": 10.7,
+        "pacing+safety": 6.4,
+        "allocation": 36.3,
+        "tick_total": 79.3
+      },
+      "ms_p95": {
+        "events": 49.7,
+        "snapshot": 12.3,
+        "pacing+safety": 9.8,
+        "allocation": 326.4,
+        "tick_total": 403.5
+      },
+      "realtime_factor": 3.99,
+      "utilization": 0.152,
+      "invariant_violations": 0
+    }
+  ]
+}
